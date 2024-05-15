@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/flex-test.css" rel="stylesheet" type="text/css"/>
+    <title>Title</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+                  css-mode="true">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+</swiper-container>
+
+<div class="ch-marketing" style="display: block;">
+    <div class="main-wrapper">
+        <div class="test">
+
+            <div id="sendcodetextID" class="sendcodetextclass">Send Code</div>
+
+            <p id="change-blue" class="Passwords">Try it Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
+
+            <div class="hey">
+                <h2>hello there</h2>
+            </div>
+            <button onclick="myFunction()" id="continue">Try it</button>
+            <button onclick="hideCode()">checker</button>
+
+            <div id="myDIV"  class="mystyle">
+                This is a DIV element.
+            </div>
+
+            <script>
+                // check if a button with "continue shopping" exists
+                // if (document.querySelector('button:contains("Try it")')) {
+                //     document.getElementById("change-blue").style.color = 'blue';
+                // }
+                document.querySelectorAll('.hey h2').innerText = "hey";
+                var elem = document.getElementById("continue");
+                var text1 = 'Try it';
+                if(elem.innerHTML.indexOf(text1) > -1) {
+                    // document.querySelectorAll('.hey h2').innerText = "hey";
+                    document.querySelectorAll("h2").innerText = "Forgot Password"
+
+                } else {
+                    // document.querySelectorAll('.test p').innerText = "Forgot Password"
+                    document.getElementById("myDIV").innerText = "Forgot Password"
+                }
+
+
+                // var checker = document.getElementById("change-blue");
+                // if (checker.innerHTML.indexOf = "asd") {
+                //     checker.style.color = 'blue';
+                // }
+                //
+                // if (document.getElementById('change-blue').innerHTML.indexOf('Click the') != -1){
+                //     checker.style.color = 'blue';
+                // }
+                //
+                // var elem = document.getElementById('change-blue');
+                // var text = 'Click the';
+                // if(elem.innerHTML.indexOf(text) > -1) {
+                //     document.querySelectorAll('.hey h2').innerText = "New Value"
+                //
+                // }
+                //
+                // var liTag = document.querySelectorAll('ul li')
+                // var clTag = liTag.classList
+                // var clContain = cl.contains("Password");
+                //
+                // var checker = document.getElementById("change-blue");
+                // if (clContain) {
+                //     checker.style.color = 'blue';
+                // }
+
+
+                var liTag = document.querySelectorAll('.attr ul li');
+                var clTag = liTag.classList;
+                var clContain = clTag.contains("Password");
+
+                var checker = document.getElementById("change-blue");
+                if (clContain) {
+                    document.querySelectorAll('div.heading h1').innerText = "Create an Account"
+                } else {
+                    document.querySelectorAll('div.heading h1').innerText = "Forgot Password"
+                }
+                // var elem = document.getElementById('change-blue');
+                // var text = 'Click the';
+                // if(elem.innerHTML.indexOf(text) > -1) {
+                //     var anchorElements = document.querySelectorAll('.hey h2');
+                //     for (var i in anchorElements)
+                //         anchorElements[i].innerText = "red";
+                //
+                // }
+
+
+            </script>
+
+        </div>
+
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+</html>
