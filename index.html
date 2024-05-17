@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body class="ch-marketing">
@@ -18,7 +23,7 @@
         <nav></nav>
 
         <section class="flex-section hero-wrapper">
-          <div class="hero-content">
+          <div class="flex-content">
             <div class="hero-heading">
               <div class="hero-text">
                 <h1>Where Art Meets Tech</h1>
@@ -296,17 +301,177 @@
       </div>
     </section>
 
-    <section class="flex-section">
-      <div class="text-center">
-        <h4>Our Teams</h4>
-      </div>
-    </section>
+    <div class="main-wrapper">
+      <section class="flex-section">
+        <div class="flex-content">
+          <div class="text-center">
+            <h4>Our Teams</h4>
+            <p>
+              We’ve picked the A-team because they’re not only the best in their
+              creative field but also the most fun to hang around. While our
+              crew on the road definitely make us look good, behind the scenes
+              we are seriously geeky tech heads, using the latest technology to
+              push the boundaries of what’s possible. Our leadership team has
+              built processes that work, and is committed to running the show as
+              simply as possible.
+            </p>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-thumb team-3">
+                    <div class="team-info">
+                      <span class="team-name font-weight-500">Paul Gal</span>
+                      <span class="team-role font-weight-300"
+                        >Chief Executive Officer</span
+                      >
+                      <span class="team-linkedin font-weight-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="13"
+                          viewBox="0 0 14 13"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.0556 0C12.4386 0 12.806 0.152182 13.0769 0.423068C13.3478 0.693954 13.5 1.06135 13.5 1.44444V11.5556C13.5 11.9386 13.3478 12.306 13.0769 12.5769C12.806 12.8478 12.4386 13 12.0556 13H1.94444C1.56135 13 1.19395 12.8478 0.923068 12.5769C0.652182 12.306 0.5 11.9386 0.5 11.5556V1.44444C0.5 1.06135 0.652182 0.693954 0.923068 0.423068C1.19395 0.152182 1.56135 0 1.94444 0H12.0556ZM11.6944 11.1944V7.36667C11.6944 6.74223 11.4464 6.14337 11.0048 5.70182C10.5633 5.26028 9.96444 5.01222 9.34 5.01222C8.72611 5.01222 8.01111 5.38778 7.66444 5.95111V5.14944H5.64944V11.1944H7.66444V7.63389C7.66444 7.07778 8.11222 6.62278 8.66833 6.62278C8.9365 6.62278 9.19368 6.72931 9.3833 6.91893C9.57292 7.10855 9.67944 7.36573 9.67944 7.63389V11.1944H11.6944ZM3.30222 4.01556C3.62402 4.01556 3.93263 3.88772 4.16018 3.66018C4.38772 3.43263 4.51556 3.12402 4.51556 2.80222C4.51556 2.13056 3.97389 1.58167 3.30222 1.58167C2.97851 1.58167 2.66806 1.71026 2.43916 1.93916C2.21026 2.16806 2.08167 2.47851 2.08167 2.80222C2.08167 3.47389 2.63056 4.01556 3.30222 4.01556ZM4.30611 11.1944V5.14944H2.30556V11.1944H4.30611Z"
+                            fill="white"
+                          />
+                        </svg>
+                        LinkedIn</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-thumb team-3">
+                    <div class="team-info">
+                      <span class="team-name font-weight-500">Paul Gal</span>
+                      <span class="team-role font-weight-300"
+                        >Chief Executive Officer</span
+                      >
+                      <span class="team-linkedin font-weight-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="13"
+                          viewBox="0 0 14 13"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.0556 0C12.4386 0 12.806 0.152182 13.0769 0.423068C13.3478 0.693954 13.5 1.06135 13.5 1.44444V11.5556C13.5 11.9386 13.3478 12.306 13.0769 12.5769C12.806 12.8478 12.4386 13 12.0556 13H1.94444C1.56135 13 1.19395 12.8478 0.923068 12.5769C0.652182 12.306 0.5 11.9386 0.5 11.5556V1.44444C0.5 1.06135 0.652182 0.693954 0.923068 0.423068C1.19395 0.152182 1.56135 0 1.94444 0H12.0556ZM11.6944 11.1944V7.36667C11.6944 6.74223 11.4464 6.14337 11.0048 5.70182C10.5633 5.26028 9.96444 5.01222 9.34 5.01222C8.72611 5.01222 8.01111 5.38778 7.66444 5.95111V5.14944H5.64944V11.1944H7.66444V7.63389C7.66444 7.07778 8.11222 6.62278 8.66833 6.62278C8.9365 6.62278 9.19368 6.72931 9.3833 6.91893C9.57292 7.10855 9.67944 7.36573 9.67944 7.63389V11.1944H11.6944ZM3.30222 4.01556C3.62402 4.01556 3.93263 3.88772 4.16018 3.66018C4.38772 3.43263 4.51556 3.12402 4.51556 2.80222C4.51556 2.13056 3.97389 1.58167 3.30222 1.58167C2.97851 1.58167 2.66806 1.71026 2.43916 1.93916C2.21026 2.16806 2.08167 2.47851 2.08167 2.80222C2.08167 3.47389 2.63056 4.01556 3.30222 4.01556ZM4.30611 11.1944V5.14944H2.30556V11.1944H4.30611Z"
+                            fill="white"
+                          />
+                        </svg>
+                        LinkedIn</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-thumb team-3">
+                    <div class="team-info">
+                      <span class="team-name font-weight-500">Paul Gal</span>
+                      <span class="team-role font-weight-300"
+                        >Chief Executive Officer</span
+                      >
+                      <span class="team-linkedin font-weight-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="13"
+                          viewBox="0 0 14 13"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.0556 0C12.4386 0 12.806 0.152182 13.0769 0.423068C13.3478 0.693954 13.5 1.06135 13.5 1.44444V11.5556C13.5 11.9386 13.3478 12.306 13.0769 12.5769C12.806 12.8478 12.4386 13 12.0556 13H1.94444C1.56135 13 1.19395 12.8478 0.923068 12.5769C0.652182 12.306 0.5 11.9386 0.5 11.5556V1.44444C0.5 1.06135 0.652182 0.693954 0.923068 0.423068C1.19395 0.152182 1.56135 0 1.94444 0H12.0556ZM11.6944 11.1944V7.36667C11.6944 6.74223 11.4464 6.14337 11.0048 5.70182C10.5633 5.26028 9.96444 5.01222 9.34 5.01222C8.72611 5.01222 8.01111 5.38778 7.66444 5.95111V5.14944H5.64944V11.1944H7.66444V7.63389C7.66444 7.07778 8.11222 6.62278 8.66833 6.62278C8.9365 6.62278 9.19368 6.72931 9.3833 6.91893C9.57292 7.10855 9.67944 7.36573 9.67944 7.63389V11.1944H11.6944ZM3.30222 4.01556C3.62402 4.01556 3.93263 3.88772 4.16018 3.66018C4.38772 3.43263 4.51556 3.12402 4.51556 2.80222C4.51556 2.13056 3.97389 1.58167 3.30222 1.58167C2.97851 1.58167 2.66806 1.71026 2.43916 1.93916C2.21026 2.16806 2.08167 2.47851 2.08167 2.80222C2.08167 3.47389 2.63056 4.01556 3.30222 4.01556ZM4.30611 11.1944V5.14944H2.30556V11.1944H4.30611Z"
+                            fill="white"
+                          />
+                        </svg>
+                        LinkedIn</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-thumb team-4">
+                    <div class="team-info">
+                      <span class="team-name font-weight-500"
+                        >Mary Joyce Salustiano</span
+                      >
+                      <span class="team-role font-weight-300"
+                        >Chief Operating Officer</span
+                      >
+                      <span class="team-linkedin font-weight-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="13"
+                          viewBox="0 0 14 13"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.0556 0C12.4386 0 12.806 0.152182 13.0769 0.423068C13.3478 0.693954 13.5 1.06135 13.5 1.44444V11.5556C13.5 11.9386 13.3478 12.306 13.0769 12.5769C12.806 12.8478 12.4386 13 12.0556 13H1.94444C1.56135 13 1.19395 12.8478 0.923068 12.5769C0.652182 12.306 0.5 11.9386 0.5 11.5556V1.44444C0.5 1.06135 0.652182 0.693954 0.923068 0.423068C1.19395 0.152182 1.56135 0 1.94444 0H12.0556ZM11.6944 11.1944V7.36667C11.6944 6.74223 11.4464 6.14337 11.0048 5.70182C10.5633 5.26028 9.96444 5.01222 9.34 5.01222C8.72611 5.01222 8.01111 5.38778 7.66444 5.95111V5.14944H5.64944V11.1944H7.66444V7.63389C7.66444 7.07778 8.11222 6.62278 8.66833 6.62278C8.9365 6.62278 9.19368 6.72931 9.3833 6.91893C9.57292 7.10855 9.67944 7.36573 9.67944 7.63389V11.1944H11.6944ZM3.30222 4.01556C3.62402 4.01556 3.93263 3.88772 4.16018 3.66018C4.38772 3.43263 4.51556 3.12402 4.51556 2.80222C4.51556 2.13056 3.97389 1.58167 3.30222 1.58167C2.97851 1.58167 2.66806 1.71026 2.43916 1.93916C2.21026 2.16806 2.08167 2.47851 2.08167 2.80222C2.08167 3.47389 2.63056 4.01556 3.30222 4.01556ZM4.30611 11.1944V5.14944H2.30556V11.1944H4.30611Z"
+                            fill="white"
+                          />
+                        </svg>
+                        LinkedIn</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- end swiper -->
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!--owl carousel-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        initialSlide: 2,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
