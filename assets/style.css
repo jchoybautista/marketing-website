@@ -1,355 +1,398 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
+  background: #fff;
 }
 
-html, body, a, span, div, ul, li, h1, h2, h3, h4, h5, h6 {
-    color: #152342;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+html,
+body,
+a,
+p,
+span,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #152342;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .ch-marketing h1 {
-    font-size: 54px;
+  font-size: 54px;
 }
 
 .ch-marketing h2 {
-    font-size: 32px;
-    font-weight: 400;
+  font-size: 32px;
 }
 
 .ch-marketing h3 {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
 }
 
 .ch-marketing h4 {
-    font-size: 21px;
-    font-weight: 700;
+  font-size: 21px;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-800 {
+  font-weight: 800;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary-button {
+  background: #e95b35;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  vertical-align: middle;
+  display: flex;
+  gap: 6px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 130px;
 }
 
 .main-wrapper {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    /*height: 100vh;*/
-    width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .flex-section {
-    display: flex;
-    justify-content: center;
-    align-content: unset;
-    width: 1080px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: unset;
+  width: 1080px;
+  text-align: center;
 }
 
-.flex-section h1, .flex-section p {
-    margin: 0;
+.flex-section h1,
+.flex-section p {
+  margin: 0;
 }
 
 .hero-wrapper {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 400px;
-    height: auto;
-    justify-content: center;
-    overflow: hidden;
-    padding: 120px 0 50px;
-    position: relative;
-    width: 100%;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 400px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 120px 0 50px;
+  position: relative;
+  width: 100%;
 }
 
 .hero-content {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 40px;
-    height: min-content;
-    justify-content: center;
-    max-width: 1150px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 1150px;
-    z-index: 1;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: center;
+  max-width: 1150px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1150px;
+  z-index: 1;
 }
 
 .hero-heading {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 40px;
-    height: min-content;
-    justify-content: center;
-    max-width: 1150px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 1150px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: min-content;
+  justify-content: center;
+  max-width: 1150px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1150px;
 }
 
 .hero-heading .hero-text {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-    height: min-content;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 100%;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
 }
 
 .hero-heading .hero-btn-wrapper {
-    flex: none;
-    height: auto;
-    position: relative;
-    width: auto;
-    z-index: 2;
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+  z-index: 2;
 }
 
 .ch-marketing .hero-btn {
-    background: #E95B35;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50px;
-    padding: 21px 16px;
-    text-decoration: none;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 234px;
+  background: #e95b35;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 21px 16px;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 234px;
 }
 
 .ch-marketing .hero-btn .left-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ch-marketing .hero-btn .btn-text {
-    font-size: 18px;
-    color: #fff;
-    line-height: 17px;
-    margin-top: -8px;
-    text-align: left;
-    padding-left: 16px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 17px;
+  margin-top: -8px;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .ch-marketing .hero-btn .btn-text small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .hero-bg-wrapper {
-    align-content: center;
-    align-items: center;
-    border-radius: 30px;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 30px;
-    height: 1080px;
-    justify-content: flex-start;
-    left: calc(50.00000000000002% - min(1200px, 1150px) / 2);
-    max-width: 1200px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 1150px;
+  align-content: center;
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: 1080px;
+  justify-content: flex-start;
+  left: calc(50.00000000000002% - min(1200px, 1150px) / 2);
+  max-width: 1200px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1150px;
 }
 
 .hero-bg-container {
-    position: absolute;
-    border-radius: inherit;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .hero-bg-container img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    object-position: center;
-    object-fit: cover;
-    image-rendering: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: cover;
+  image-rendering: auto;
 }
 
 .floating-caption-left {
-    background: #152342;
-    color: #fff;
-    align-content: center;
-    align-items: center;
-    border-bottom-left-radius: 100px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-    height: 45px;
-    justify-content: center;
-    left: 167px;
-    overflow: hidden;
-    padding: 10px 20px;
-    position: absolute;
-    top: 52%;
-    width: auto;
-    z-index: 1;
+  background: #152342;
+  color: #fff;
+  align-content: center;
+  align-items: center;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 45px;
+  justify-content: center;
+  left: 167px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: absolute;
+  top: 52%;
+  width: auto;
+  z-index: 1;
 }
 
 .caption-left {
-    color: #fff;
+  color: #fff;
 }
 
 .floating-caption-right {
-    background: #E95B35;
-    color: #fff;
-    align-content: center;
-    align-items: center;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-    height: 45px;
-    justify-content: center;
-    left: 754px;
-    overflow: hidden;
-    padding: 10px 20px 8px;
-    position: absolute;
-    top: 54%;
-    width: auto;
-    z-index: 1;
+  background: #e95b35;
+  color: #fff;
+  align-content: center;
+  align-items: center;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 45px;
+  justify-content: center;
+  left: 754px;
+  overflow: hidden;
+  padding: 10px 20px 8px;
+  position: absolute;
+  top: 54%;
+  width: auto;
+  z-index: 1;
 }
 
 .caption-right {
-    color: #fff;
+  color: #fff;
 }
 
 .hero-intro {
-    align-content: flex-start;
-    background: #fff;
-    align-items: center;
-    border-radius: 30px;
-    box-shadow: 0 3px 40px #00000026;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 40px;
-    height: auto;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 960px;
-    z-index: 1;
+  align-content: flex-start;
+  background: #fff;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 3px 40px #00000026;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  z-index: 1;
 }
 
 .hero-intro .ch-logo {
-    width: 197px;
-    height: auto;
-    margin-bottom: 24px;
+  width: 197px;
+  height: auto;
+  margin-bottom: 24px;
 }
 
 .hero-intro p {
-    font-weight: 400;
-    color: #7e7e7e;
+  font-weight: 400;
+  color: #7e7e7e;
 }
 
 .hero-intro .left-content {
-    width: 55%;
-    text-align: left;
-    padding: 60px 30px 60px 60px;;
+  width: 55%;
+  text-align: left;
+  padding: 60px 30px 60px 60px;
 }
 
 .hero-intro .right-content {
-    width: 45%;
-    padding: 60px 60px 60px 30px;;
+  width: 45%;
+  padding: 60px 60px 60px 30px;
 }
 
 .slider-flex {
-    display: flex;
-    align-items: center;
-    padding: 60px 16px;
+  display: flex;
+  align-items: center;
 }
 
 .slider-thumb-wrapper {
-    width: 100%;
+  width: 100%;
 }
 .slider-thumb {
-    height: 400px;
-    width: 100%;
-    border-radius: 105px;
-    max-width: 563px;
-    background-image: url(../assets/img/photography-sample.png);
-    background-size: cover;
-    background-position: bottom;
+  height: 450px;
+  width: 100%;
+  border-radius: 105px;
+  max-width: 563px;
+  background-image: url(../assets/img/photography-sample.png);
+  background-size: cover;
+  background-position: bottom;
 }
+.slider-content {
+  padding: 24px;
+  text-align: left;
+  padding: 60px 40px;
+}
+
 .slider {
-    margin-top: 16px;
-    padding-top: 16px;
-    margin-bottom: 16px;
-}
-
-
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  margin-top: 16px;
+  padding-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 1218px;
+  display: flex;
+  margin: auto;
 }
 
 swiper-container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
