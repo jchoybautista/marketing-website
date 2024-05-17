@@ -356,9 +356,21 @@ h6 {
   width: 100%;
   border-radius: 105px;
   max-width: 563px;
+}
+.slider-thumb-1 {
   background-image: url(../assets/img/photography-sample.png);
   background-size: cover;
   background-position: bottom;
+}
+.slider-thumb-2 {
+  background-image: url(../assets/img/floorplan-sample.png);
+  background-size: cover;
+  background-position: center;
+}
+.slider-thumb-3 {
+  background-image: url(../assets/img/copywriting-sample.png);
+  background-size: cover;
+  background-position: center;
 }
 .slider-content {
   padding: 24px;
@@ -390,9 +402,23 @@ swiper-slide {
   align-items: center;
 }
 
+.slider-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.slider-content .feature-icon {
+  background-color: #152342;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 52px;
+  border-radius: 40px;
 }
