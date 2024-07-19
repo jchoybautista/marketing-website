@@ -85,7 +85,63 @@ h6 {
   width: 100%;
   max-width: 130px;
 }
+.terrain-bg {
+  position: absolute;
+  background-image: url("img/terrain.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.terrain2-bg {
+  position: absolute;
+  background-image: url("img/terrain-2.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1150px;
+  padding: 24px 0 16px 0;
+}
+nav .nav-logo img {
+  width: 100%;
+}
+nav .nav-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+nav .nav-list a {
+  text-decoration: none;
+}
+nav .nav-contact-us {
+  background: #e95b35;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0 auto;
+  gap: 8px;
+}
+nav .nav-contact-us span {
+  color: #fff;
+}
 .main-wrapper {
   display: flex;
   justify-content: start;
@@ -214,6 +270,7 @@ h6 {
 
 .ch-marketing .hero-btn .btn-text small {
   font-size: 12px;
+  color: #fff;
 }
 
 .hero-bg-wrapper {
@@ -387,9 +444,8 @@ h6 {
 }
 
 .slider {
-  margin-top: 16px;
-  padding-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
+  padding: 16px 0 80px;
   width: 100%;
   max-width: 1218px;
   display: flex;
@@ -398,6 +454,22 @@ h6 {
 
 /* Swiper */
 /* Our Services */
+section.our-team {
+  background: #f4f4f4;
+  padding: 80px 0;
+  position: relative;
+}
+section.our-team h4 {
+  margin-top: 0;
+}
+section.our-team .flex-content {
+  gap: 0;
+}
+section.our-team .start-here {
+  position: absolute;
+  left: 8%;
+  bottom: 7%;
+}
 swiper-container {
   width: 100%;
   height: 100%;
@@ -456,24 +528,42 @@ swiper-slide img {
 
 /* Teams */
 .team-thumb {
-  border-radius: 40px;
+  border-radius: 35px;
   height: 300px;
   width: 100%;
   max-width: 300px;
   display: flex;
   flex-direction: column-reverse;
 }
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+  border-radius: 35px;
+}
+.team-1 {
+  background-image: url("../assets/img/team/kelseyd.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.team-2 {
+  background-image: url("../assets/img/team/oliviad.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 .team-3 {
-  background-image: url("../assets/img/paulg.jpg");
+  background-image: url("../assets/img/team/paulg.jpg");
   background-size: cover;
   background-position: center;
 }
 .team-4 {
-  background-image: url("../assets/img/mj.png");
+  background-image: url("../assets/img/team/mj.png");
   background-size: cover;
   background-position: top;
 }
-
+.team-5 {
+  background-image: url("../assets/img/team/mattcampbell.jpg");
+  background-size: cover;
+  background-position: top;
+}
 .team-info {
   display: flex;
   height: 101px;
@@ -490,4 +580,163 @@ swiper-slide img {
 }
 .team-info span.team-linedin {
   display: flex;
+}
+
+/* Home video section */
+section.home-video-section {
+  padding: 80px 16px;
+}
+section.home-video-section .flex-section {
+  margin: auto;
+  width: 100%;
+  max-width: 1150px;
+  min-height: 665px;
+  position: relative;
+}
+.play-icon {
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  margin: auto;
+  top: 48%;
+  height: 70px;
+  width: 70px;
+}
+.play-icon svg {
+  padding-top: 23px;
+  padding-left: 6px;
+}
+.video-thumb-left {
+  background-image: url("img/Team/mattcampbell.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 50%;
+}
+.video-info-right {
+  background: #152342;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 50%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.video-info-right * {
+  color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Our Client */
+.our-clients-section {
+  background: #f4f4f4;
+  padding: 80px 0;
+}
+.our-clients-section .flex-section {
+  margin: auto;
+}
+.our-clients-section h4 {
+  margin: 0;
+}
+.our-clients-section swiper-slide {
+  background: none;
+}
+.our-clients-section swiper-slide img {
+  width: auto;
+  height: 70px;
+}
+.our-clients-section .swiper {
+  padding: 0;
+}
+.our-clients-section .swiper-slide {
+  height: auto;
+}
+
+/* Download App */
+section.download-app-section {
+  background: #ba492a;
+  color: #fff;
+  padding: 80px 0;
+  position: relative;
+}
+section.download-app-section .flex-section {
+  gap: 0;
+  margin: auto;
+}
+section.download-app-section h4 {
+  margin-top: 0;
+  color: #fff;
+}
+section.download-app-section h2 {
+  margin: 0;
+  color: #fff;
+}
+section.download-app-section .download-app-content {
+  display: flex;
+  gap: 32px;
+}
+section.download-app-section ul {
+  padding: 0;
+  list-style: none;
+}
+section.download-app-section ul li {
+  color: #fff;
+  text-align: left;
+  font-size: 19px;
+  padding: 8px 0;
+}
+section.download-app-section .download-buttons {
+  text-align: left;
+}
+section.download-app-section .download-buttons a {
+  text-decoration: none;
+  padding-right: 8px;
+}
+section.download-app-section .content-left {
+  width: 45%;
+}
+section.download-app-section .content-left img {
+  width: 100%;
+}
+section.download-app-section .content-right {
+  width: 55%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+section.download-app-section ul li svg {
+  padding-right: 8px;
+}
+
+/* Footer */
+footer {
+  background: #152342;
+  color: #fff;
+}
+footer .flex-section {
+  margin: auto;
+  width: 100%;
+  max-width: 1150px;
+  min-height: 665px;
+  position: relative;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+footer ul li {
+  color: #fff;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1165px) {
+  .flex-section,
+  .flex-content {
+    width: 100%;
+  }
 }
